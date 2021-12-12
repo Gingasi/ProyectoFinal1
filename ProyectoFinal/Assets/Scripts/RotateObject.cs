@@ -5,19 +5,16 @@ using UnityEngine;
 public class RotateObject : MonoBehaviour
 {
     public GameObject Helices;
-    
-    private float speed = 1000f;
+    public GameObject Coin;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float Helispeed = 1000f;
+    private float speed = 12f;
 
     // Update is called once per frame
     void Update()
     {
-        Helices.transform.Rotate(0, Time.deltaTime * speed, 0);
-        
+        Helices.transform.Rotate(0, Time.deltaTime * Helispeed, 0);
+        Coin.transform.Rotate(0, Time.deltaTime * speed, 0);
+
     }
 }
