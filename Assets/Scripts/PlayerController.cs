@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float turnspeed = 20f;
     private float yMax = 200f;
-    private float xMax = 200f;
+    private float xMax = 320f;
     private float zMax = 200f;
 
     public GameObject Misil;
@@ -32,9 +32,9 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Rotate(Vector3.right * turnspeed * Time.deltaTime * -verticalInput);
-        transform.Rotate(Vector3.forward * turnspeed * Time.deltaTime * -horizontalInput);
+        transform.Rotate(Vector3.up * turnspeed * Time.deltaTime * horizontalInput);
 
-        if (transform.position.x < xMax)
+        if (transform.position.x > xMax)
         {
             transform.position = new Vector3(xMax, transform.position.y,
                 transform.position.z);
@@ -47,33 +47,33 @@ public class PlayerController : MonoBehaviour
                 transform.position.z);
         }
 
-        if (transform.position.x < yMax)
+        if (transform.position.y > yMax)
         {
             transform.position = new Vector3(transform.position.x, yMax,
                 transform.position.z);
         }
 
      
-        if (transform.position.x < -yMax)
+        if (transform.position.y < 0)
         {
-            transform.position = new Vector3(transform.position.x, -yMax,
+            transform.position = new Vector3(transform.position.x, 0,
                 transform.position.z);
         }
-        if (transform.position.x < zMax)
+        if (transform.position.z > zMax)
         {
             transform.position = new Vector3(transform.position.x,
                 transform.position.y, zMax);
         }
 
-        if (transform.position.x < -zMax)
+        if (transform.position.z < -zMax)
         {
             transform.position = new Vector3(transform.position.x,
                 transform.position.y, zMax);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
             Instantiate(Misil, transform.position,
-                Misil.transform.rotation);
+                transform.rotation);
         }
     }
 }
