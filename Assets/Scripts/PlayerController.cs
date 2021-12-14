@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private float xMax = 320f;
     private float zMax = 200f;
 
-    public GameObject Misil;
+    
 
 
 
@@ -70,10 +70,6 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x,
                 transform.position.y, zMax);
         }
-        if (Input.GetKeyDown(KeyCode.RightControl))
-        {
-            Instantiate(Misil, transform.position,
-                transform.rotation);
-        }
+        
     }
 }

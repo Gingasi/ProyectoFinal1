@@ -9,7 +9,7 @@ public class RotateObject : MonoBehaviour
     public GameObject HelicesTraseras;
 
     private float Helispeed = 1000f;
-    private float speed = 7f;
+    private float speed = 40f;
 
     // Update is called once per frame
     void Update()
