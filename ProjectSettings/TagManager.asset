@@ -8,6 +8,7 @@ TagManager:
   - coins
   - city
   - misil
+  - coinvariant
   layers:
   - Default
   - TransparentFX

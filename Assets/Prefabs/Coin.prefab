@@ -202,6 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2920755960128630913}
   - component: {fileID: 505658882804461529}
+  - component: {fileID: 1868966880226704329}
   m_Layer: 0
   m_Name: Coin
   m_TagString: coins
@@ -216,7 +217,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7748415633464759729}
-  m_LocalRotation: {x: 0, y: -0.1589044, z: 0, w: -0.98729396}
+  m_LocalRotation: {x: 0, y: -0.99303025, z: 0, w: 0.11785993}
   m_LocalPosition: {x: 65.447, y: 165.971, z: 94.245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -241,6 +242,19 @@ MonoBehaviour:
   Helices: {fileID: 2079867783608671388, guid: c9489bc401e8a684fa0355ca2e7aebf2, type: 3}
   Coin: {fileID: 7748415633464759729}
   HelicesTraseras: {fileID: 9177474247349544232, guid: c635fe142d21db049acb49669a3f3864, type: 3}
+--- !u!65 &1868966880226704329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7748415633464759729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8320007557463110792
 GameObject:
   m_ObjectHideFlags: 0

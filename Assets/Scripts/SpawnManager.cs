@@ -9,7 +9,6 @@ public class SpawnManager : MonoBehaviour
     public float yMin = 90f;
     private float xMax = 200f;
     private float zMax = 200f;
-    private float speed = 8f;
     private Vector3 InitialPos = Vector3.zero;
     private float startTime = 2f;
     private float repeatRate = 1.5f;

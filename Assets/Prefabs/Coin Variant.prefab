@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &-1328750080947267387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293758276518929677}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2517745210359935164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11,6 +24,10 @@ PrefabInstance:
       propertyPath: Coin
       value: 
       objectReference: {fileID: 5293758276518929677}
+    - target: {fileID: 1868966880226704329, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1973219011570661179, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -41,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2920755960128630913, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.30012923
+      value: 0.609989
       objectReference: {fileID: 0}
     - target: {fileID: 2920755960128630913, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -49,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2920755960128630913, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9538986
+      value: -0.79240996
       objectReference: {fileID: 0}
     - target: {fileID: 2920755960128630913, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -70,6 +87,10 @@ PrefabInstance:
     - target: {fileID: 7748415633464759729, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
       propertyPath: m_Name
       value: Coin Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748415633464759729, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
+      propertyPath: m_TagString
+      value: coinvariant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6fc671f18b3f34792fb267f631f08e, type: 3}
