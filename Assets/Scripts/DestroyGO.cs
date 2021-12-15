@@ -17,7 +17,7 @@ public class DestroyGO : MonoBehaviour
     {
         Contador = 0;
     }
-    private void OnCollisionEnter(Collision otherCollider)
+    private void OnTriggerEnter(Collider otherCollider)
     {
         if (otherCollider.gameObject.CompareTag("city"))
         {
@@ -35,18 +35,25 @@ public class DestroyGO : MonoBehaviour
         {
             
             Contador += 5;
+            if (Contador >= 10)
+            {
+                Debug.Log("GANASTE");
+                Time.timeScale = 0;
+            }
         }
-        if (otherCollider.gameObject.CompareTag("coinvariant"))
+       
+        /*if (otherCollider.gameObject.CompareTag("coinvariant"))
         {
            
             Contador += 1;
-        }
+            if (Contador >= 10)
+            {
+                Debug.Log("GANASTE");
+                Time.timeScale = 0;
+            }
 
-        if (Contador >= 10)
-        {
-            Debug.Log("GANASTE");
-            Time.timeScale = 0;
-        }
+        }*/
+
 
 
 

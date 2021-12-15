@@ -5,7 +5,7 @@ using UnityEngine;
 public class Missil : MonoBehaviour
 {
     public GameObject Misil;
-   
+
 
 
     void Update()
@@ -16,4 +16,5 @@ public class Missil : MonoBehaviour
                 transform.rotation);
         }
     }
+    
 }

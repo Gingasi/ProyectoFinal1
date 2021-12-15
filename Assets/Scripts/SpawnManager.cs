@@ -34,4 +34,5 @@ public class SpawnManager : MonoBehaviour
         Instantiate(Prefab, InitialPos,
             Prefab.transform.rotation);
     }
+   
 }
