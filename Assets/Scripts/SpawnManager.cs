@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
     private float zMax = 200f;
     private Vector3 InitialPos = Vector3.zero;
     private float startTime = 2f;
-    private float repeatRate = 1.5f;
+    private float repeatRate = 5f;
  
     // Start is called before the first frame update
     void Start()

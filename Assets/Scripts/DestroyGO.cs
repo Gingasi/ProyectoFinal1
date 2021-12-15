@@ -6,8 +6,7 @@ public class DestroyGO : MonoBehaviour
     
 {
 
-    public int Coin = 5;
-    public int CoinVariant = 1;
+    
     public int Contador = 0;
 
 
@@ -33,7 +32,7 @@ public class DestroyGO : MonoBehaviour
 
         if (otherCollider.gameObject.CompareTag("coins"))
         {
-            
+            Destroy(otherCollider.gameObject);
             Contador += 5;
             if (Contador >= 10)
             {
@@ -42,9 +41,9 @@ public class DestroyGO : MonoBehaviour
             }
         }
        
-        /*if (otherCollider.gameObject.CompareTag("coinvariant"))
+       if (otherCollider.gameObject.CompareTag("coinvariant"))
         {
-           
+            Destroy(otherCollider.gameObject);
             Contador += 1;
             if (Contador >= 10)
             {
@@ -52,7 +51,7 @@ public class DestroyGO : MonoBehaviour
                 Time.timeScale = 0;
             }
 
-        }*/
+        }
 
 
 
